@@ -1,3 +1,4 @@
+
 import os
 import sys
 import time
@@ -105,7 +106,7 @@ def run_structure(input: str) -> Optional[str]:
 
 if __name__ == "__main__":
     try:
-        print(run_structure("What is 123 * 34, 23 / 12.3, and 9 ^ 4?"))
+        response= run_structure("What is 123 * 34, 23 / 12.3, and 9 ^ 4?")
     except HTTPError as e:
         print(e)
         print(f"HTTP Error: {e.response.text}", file=sys.stderr)
